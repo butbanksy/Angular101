@@ -1,0 +1,7 @@
+<span class="status" [ngStyle]="{'background-color': passenger.checkedIn ? 'turquoise' : 'tomato'}"></span>
+{{ id + 1 }} - {{passenger.fullName}}
+<div class="checkin-date">Check-in Date
+  : {{passenger.checkInDate ? (passenger.checkInDate | date: "y MMM d" | uppercase) : "Not checked in" }}</div>
+<div class="children">
+  Children : {{passenger.children?.length || 0}}
+</div>
